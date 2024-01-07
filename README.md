@@ -41,30 +41,14 @@ limitations under the License.
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/array-base-broadcasted-unary5d
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var bunary5d = require( '@stdlib/array-base-broadcasted-unary5d' );
+import bunary5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-unary5d@deno/mod.js';
 ```
 
 #### bunary5d( arrays, shapes, fcn )
@@ -72,8 +56,8 @@ var bunary5d = require( '@stdlib/array-base-broadcasted-unary5d' );
 Applies a unary callback to elements in a [broadcasted][@stdlib/array/base/broadcast-array] nested input array and assigns results to elements in a five-dimensional nested output array.
 
 ```javascript
-var zeros5d = require( '@stdlib/array-base-zeros5d' );
-var abs = require( '@stdlib/math-base-special-abs' );
+import zeros5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros5d@deno/mod.js';
+import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@deno/mod.js';
 
 var x = [ [ [ [ [ -1.0, -2.0 ] ] ] ] ];
 var y = zeros5d( [ 1, 1, 1, 2, 2 ] );
@@ -115,11 +99,11 @@ The function accepts the following arguments:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
-var filled5dBy = require( '@stdlib/array-base-filled5d-by' );
-var zeros5d = require( '@stdlib/array-base-zeros5d' );
-var abs = require( '@stdlib/math-base-special-abs' );
-var bunary5d = require( '@stdlib/array-base-broadcasted-unary5d' );
+var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
+import filled5dBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled5d-by@deno/mod.js';
+import zeros5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros5d@deno/mod.js';
+import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@deno/mod.js';
+import bunary5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-unary5d@deno/mod.js';
 
 var shapes = [
     [ 1, 1, 1, 1, 3 ],
@@ -157,7 +141,7 @@ console.log( y );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -217,9 +201,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-broadcasted-unary5d/main/LICENSE
 
-[@stdlib/array/base/broadcast-array]: https://github.com/stdlib-js/array-base-broadcast-array
+[@stdlib/array/base/broadcast-array]: https://github.com/stdlib-js/array-base-broadcast-array/tree/deno
 
-[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes
+[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes/tree/deno
 
 </section>
 
